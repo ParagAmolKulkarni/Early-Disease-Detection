@@ -1,4 +1,4 @@
-# 🫀 Heart Disease Prediction - Machine Learning Pipeline
+# 🫀 Early Disease Prediction - Machine Learning Pipeline
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://python.org)
 [![Machine Learning](https://img.shields.io/badge/ML-Classification-green.svg)](https://scikit-learn.org)
@@ -738,6 +738,6 @@ For healthcare institutions interested in deployment:
 
 ---
 
-**© 2025 Heart Disease Prediction Project. All rights reserved. Parag Amol Kulkarni**
+**© 2025 Early Disease Prediction Project. All rights reserved. Parag Amol Kulkarni**
 
 </div>
