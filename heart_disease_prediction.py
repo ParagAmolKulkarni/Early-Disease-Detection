@@ -1,4 +1,4 @@
-# Heart Disease Prediction - Machine Learning Pipeline
+# Early Disease Prediction - Machine Learning Pipeline
 # Part C: Early Disease Detection
 
 # Import necessary libraries
@@ -18,7 +18,7 @@ from sklearn.metrics import roc_auc_score, roc_curve
 import warnings
 warnings.filterwarnings('ignore')
 
-# Set style for better plots
+# Setting style for better plots
 plt.style.use('seaborn-v0_8')
 sns.set_palette("husl")
 
@@ -32,7 +32,6 @@ print("=" * 80)
 # ============================================================================
 # 1. DATA LOADING AND INITIAL EXPLORATION
 # ============================================================================
-# Add this at the beginning to limit dataset size for testing
 def quick_test_mode(df, sample_size=10000):
     """Use smaller sample for faster testing"""
     if len(df) > sample_size:
@@ -40,12 +39,10 @@ def quick_test_mode(df, sample_size=10000):
         return df.sample(n=sample_size, random_state=42)
     return df
 
-# Modify the models dictionary to skip slow models
 models = {
     'Logistic Regression': LogisticRegression(random_state=42, max_iter=1000),
     'Decision Tree': DecisionTreeClassifier(random_state=42),
-    'Random Forest': RandomForestClassifier(random_state=42, n_estimators=50),  # Reduced trees
-    # 'SVM': SVC(random_state=42, probability=True),  # Comment out SVM
+    'Random Forest': RandomForestClassifier(random_state=42, n_estimators=50),  
     'K-Nearest Neighbors': KNeighborsClassifier(n_neighbors=5)
 }
 
